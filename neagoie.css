@@ -1,0 +1,85 @@
+body{
+	margin: 0;
+}
+
+/*Navigation Bar*/
+
+#merah{
+	background-image: linear-gradient(to right, rgba(255,0,0,2), rgba(255,0,0,0.6));
+}
+
+ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	font-size: 0.8em;
+}
+
+li {
+	padding: 18px;
+}
+
+#contact{
+	margin-left: auto;
+}
+ 
+a{
+	color: white;
+	text-decoration: none;
+}
+
+li:hover:not(.active) {
+	background-color: #111;
+}
+
+@media only screen and (max-width: 600px){
+	ul{
+		font-size: 0.5em;
+		padding: 0;
+	}
+}
+
+/*Cover Content*/
+
+#cover{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	size: 50%;
+	/*bisa pakai vh (view port height)*/
+}
+
+#bg{
+	width: 100%;
+	/*background: center center cover no-repeat fixed;*/
+}
+
+/*Main Content*/
+
+#project{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	background: url("pattern.png");
+
+}
+
+.box{
+	margin: 20px;
+	padding: 130px;
+	background: steelblue;
+}
+
+.item{
+	width: 100%;
+}
+
+/*Footer and Closing*/
+
+#footer p{
+	background: #7777;
+	text-align: center;
+	display: grid;
+	margin: 0;
+	padding: 1%;
+}
